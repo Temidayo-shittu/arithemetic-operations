@@ -9,10 +9,6 @@ const CalculatorSchema= new mongoose.Schema({
         type:Number,
         required:[true, 'Please input your second number'],
     },
-    operation:{
-        type:String,
-        enum: ['addition','subtraction','multiplication','division'],
-    },
     result:{
         type:Number,
     },

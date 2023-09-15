@@ -4,6 +4,7 @@ const CustomError= require('../errors')
 
 const createCalculator = async(req,res)=>{
     const { num1,num2,operation } = req.body
+    const { operation } = req.query
     let result;
 
     if(typeof num1 !== 'number' && typeof num2 !== 'number') throw new CustomError.BadRequestError(`Please ensure values provided are numbers`)
@@ -24,7 +25,6 @@ const createCalculator = async(req,res)=>{
     const calculator = new Calculator({
         num1,
         num2,
-        operation,
         result
     })
 
