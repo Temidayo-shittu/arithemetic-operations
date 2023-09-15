@@ -33,13 +33,7 @@ const createCalculator = async(req,res)=>{
     res.status(StatusCodes.CREATED).json({calculator})
 }
 
-const getAllOperations = async(req,res)=>{
-    const operations = await Calculator.find({})
-    if(!operations) throw new CustomError.NotFoundError(`No Arithmetic Operations Found`)
-    res.status(StatusCodes.OK).json({operations})
-}
 
 module.exports= {
     createCalculator,
-    getAllOperations
 }

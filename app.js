@@ -16,7 +16,7 @@ app.use(express.json());
 app.get('/api',(req,res)=>{
     res.json({
         message:'ARITHMETIC OPERATIONS',
-        postmanLink: 'https://elements.getpostman.com/redirect?entityId=26636754-aab25820-f498-4104-bab1-4887f8799b8d&entityType=collection'
+        postmanLink: 'https://elements.getpostman.com/redirect?entityId=26636754-e537aeac-4ad6-4788-9fe8-3b6baee8dfea&entityType=collection'
     })
 })
 
