@@ -3,7 +3,7 @@ const {StatusCodes}= require('http-status-codes')
 const CustomError= require('../errors')
 
 const createCalculator = async(req,res)=>{
-    const { num1,num2,operation } = req.body
+    const { num1,num2 } = req.body
     const { operation } = req.query
     let result;
 
